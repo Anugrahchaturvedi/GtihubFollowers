@@ -3,4 +3,86 @@
    uuid = "C6C59E5C-5BE6-4A3C-A4B1-05DCB84701D4"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99ECF80E-6AD6-4F4D-8FE5-F49FEBBE6DD0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GithubFollowes/Manager/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "getfollowers(for:page:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "99ECF80E-6AD6-4F4D-8FE5-F49FEBBE6DD0 - 9aec9063b8e04417"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GithubFollowes.NetworkManager.getfollowers(for: Swift.String, page: Swift.Int, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;GithubFollowes.Follower&gt;&gt;, GithubFollowes.DataError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "GithubFollowes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/Anugrah/GithubFollowes/GithubFollowes/Manager/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "743">
+               </Location>
+               <Location
+                  uuid = "99ECF80E-6AD6-4F4D-8FE5-F49FEBBE6DD0 - c97e2680bf529a0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in GithubFollowes.NetworkManager.getfollowers(for: Swift.String, page: Swift.Int, completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;GithubFollowes.Follower&gt;&gt;, GithubFollowes.DataError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "GithubFollowes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Desktop/Anugrah/GithubFollowes/GithubFollowes/Manager/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "263">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9409F346-8F7F-4876-BA65-9D0A2554BF9E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GithubFollowes/Manager/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "getfollowers(for:page:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD57D67B-0693-489F-9D3A-3E01FCC6BCC8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GithubFollowes/Manager/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "getfollowers(for:page:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

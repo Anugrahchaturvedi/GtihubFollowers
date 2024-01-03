@@ -26,7 +26,7 @@ class SearchVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     func createDismissKeybaordTapGesture(){
@@ -76,6 +76,7 @@ class SearchVC: UIViewController {
         }
         let vc = dashBoardVC()
         vc.title = userNameField.text
+        vc.titleName = userNameField.text
         navigationController?.pushViewController(vc, animated: true)
     }
 }

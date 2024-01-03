@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE82187C2B45360E006C8060 /* FollowerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82187B2B45360E006C8060 /* FollowerModel.swift */; };
+		CE82187E2B4536DE006C8060 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82187D2B4536DE006C8060 /* UserModel.swift */; };
+		CE8218812B453A2F006C8060 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8218802B453A2F006C8060 /* NetworkManager.swift */; };
+		CE8218842B453F02006C8060 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8218832B453F02006C8060 /* Constants.swift */; };
+		CE8218872B455AAE006C8060 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8218862B455AAE006C8060 /* FollowerCell.swift */; };
+		CE8218892B455B18006C8060 /* GithubImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8218882B455B18006C8060 /* GithubImageView.swift */; };
 		CE8BD9972B43EA4D00DA793C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BD9962B43EA4D00DA793C /* AppDelegate.swift */; };
 		CE8BD9992B43EA4D00DA793C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BD9982B43EA4D00DA793C /* SceneDelegate.swift */; };
 		CE8BD9A02B43EA5000DA793C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8BD99F2B43EA5000DA793C /* Assets.xcassets */; };
@@ -23,6 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE82187B2B45360E006C8060 /* FollowerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerModel.swift; sourceTree = "<group>"; };
+		CE82187D2B4536DE006C8060 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CE8218802B453A2F006C8060 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CE8218832B453F02006C8060 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE8218862B455AAE006C8060 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
+		CE8218882B455B18006C8060 /* GithubImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubImageView.swift; sourceTree = "<group>"; };
 		CE8BD9932B43EA4D00DA793C /* GithubFollowes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFollowes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8BD9962B43EA4D00DA793C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8BD9982B43EA4D00DA793C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +63,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE8218772B4531CF006C8060 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE8BD9B32B442E6300DA793C /* dashBoardVC.swift */,
+				CE8BD9AC2B43FB3F00DA793C /* favouriteListVC.swift */,
+				CE8BD9AA2B43F65600DA793C /* SearchVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE8218782B453205006C8060 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2D61F2B452BF60056216B /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CE8218792B45325B006C8060 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CE8BD9962B43EA4D00DA793C /* AppDelegate.swift */,
+				CE8BD9982B43EA4D00DA793C /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		CE82187A2B4535F8006C8060 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE82187B2B45360E006C8060 /* FollowerModel.swift */,
+				CE82187D2B4536DE006C8060 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE82187F2B453A1D006C8060 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CE8218802B453A2F006C8060 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CE8218822B453EF0006C8060 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				CE8218832B453F02006C8060 /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		CE8218852B455A8F006C8060 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE8218862B455AAE006C8060 /* FollowerCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		CE8BD98A2B43EA4D00DA793C = {
 			isa = PBXGroup;
 			children = (
@@ -70,16 +142,16 @@
 		CE8BD9952B43EA4D00DA793C /* GithubFollowes */ = {
 			isa = PBXGroup;
 			children = (
-				CE8BD9AA2B43F65600DA793C /* SearchVC.swift */,
-				CE8BD9B32B442E6300DA793C /* dashBoardVC.swift */,
-				CE8BD9AC2B43FB3F00DA793C /* favouriteListVC.swift */,
-				CE8BD9962B43EA4D00DA793C /* AppDelegate.swift */,
-				CE8BD9982B43EA4D00DA793C /* SceneDelegate.swift */,
+				CE8218822B453EF0006C8060 /* Constant */,
+				CE82187F2B453A1D006C8060 /* Manager */,
+				CE82187A2B4535F8006C8060 /* Model */,
+				CE8218792B45325B006C8060 /* Delegate */,
+				CE8218782B453205006C8060 /* Extension */,
+				CE8218772B4531CF006C8060 /* Controller */,
 				CE8BD9B22B4419F600DA793C /* CustomResuableElement */,
 				CE8BD99F2B43EA5000DA793C /* Assets.xcassets */,
 				CE8BD9A12B43EA5000DA793C /* LaunchScreen.storyboard */,
 				CE8BD9A42B43EA5000DA793C /* Info.plist */,
-				CEC2D61F2B452BF60056216B /* UIViewController+Extension.swift */,
 			);
 			path = GithubFollowes;
 			sourceTree = "<group>";
@@ -87,11 +159,13 @@
 		CE8BD9B22B4419F600DA793C /* CustomResuableElement */ = {
 			isa = PBXGroup;
 			children = (
+				CE8218852B455A8F006C8060 /* Cells */,
 				CE8BD9AE2B44110E00DA793C /* GithubButton.swift */,
 				CE8BD9B02B4417B700DA793C /* GithubTextfield.swift */,
 				CEC2D6192B45220B0056216B /* GithubLabel.swift */,
 				CEC2D61B2B4523A00056216B /* GithubBodylabel.swift */,
 				CEC2D61D2B45245C0056216B /* GithubAlert.swift */,
+				CE8218882B455B18006C8060 /* GithubImageView.swift */,
 			);
 			path = CustomResuableElement;
 			sourceTree = "<group>";
@@ -171,9 +245,15 @@
 				CE8BD9AF2B44110E00DA793C /* GithubButton.swift in Sources */,
 				CEC2D61C2B4523A00056216B /* GithubBodylabel.swift in Sources */,
 				CEC2D61E2B45245C0056216B /* GithubAlert.swift in Sources */,
+				CE8218892B455B18006C8060 /* GithubImageView.swift in Sources */,
+				CE8218842B453F02006C8060 /* Constants.swift in Sources */,
+				CE82187E2B4536DE006C8060 /* UserModel.swift in Sources */,
+				CE8218872B455AAE006C8060 /* FollowerCell.swift in Sources */,
+				CE82187C2B45360E006C8060 /* FollowerModel.swift in Sources */,
 				CE8BD9AB2B43F65600DA793C /* SearchVC.swift in Sources */,
 				CE8BD9B12B4417B700DA793C /* GithubTextfield.swift in Sources */,
 				CE8BD9972B43EA4D00DA793C /* AppDelegate.swift in Sources */,
+				CE8218812B453A2F006C8060 /* NetworkManager.swift in Sources */,
 				CE8BD9B42B442E6300DA793C /* dashBoardVC.swift in Sources */,
 				CE8BD9992B43EA4D00DA793C /* SceneDelegate.swift in Sources */,
 				CEC2D61A2B45220B0056216B /* GithubLabel.swift in Sources */,
