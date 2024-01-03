@@ -5,7 +5,7 @@
 //  Created by user on 03/01/24.
 //
 
-import Foundation
+import UIKit
 enum DataError: String, Error {
     case invalidResponse = "Invalid Response from the Server"
     case invalidURL = "Invalid Request from the User"
@@ -15,11 +15,12 @@ enum DataError: String, Error {
 
 class NetworkManager {
     static let shared = NetworkManager()
+    let cache = NSCache<NSString,UIImage>()
     private init() {}
     
     func getfollowers(for userName: String, page: Int, completion: @escaping (Result<[Follower], DataError>) -> Void)
     {
-        let endPoint = Constant.API.GithubBaseURL + "users/\(userName)/followers"
+        let endPoint = Constant.API.GithubBaseURL + "users/\(userName)/followers/?per_page=30&page=\(page)"
         guard let urlReq = URL(string: endPoint) else {
             completion(.failure(.invalidURL))
             return
