@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GithubFollButton: UIButton {
+class GithubButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()

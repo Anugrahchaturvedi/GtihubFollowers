@@ -10,8 +10,8 @@ import UIKit
 class SearchVC: UIViewController {
 
     let logoImage = UIImageView()
-    let userNameField = GithubFollTextfield()
-    let getFollowerBtn = GithubFollButton(backgroundColor: .systemGreen, title: "Get Followers")
+    let userNameField = GithubTextfield()
+    let getFollowerBtn = GithubButton(backgroundColor: .systemGreen, title: "Get Followers")
     var isUserNameEntered: Bool {
         return !userNameField.text!.isEmpty
     }
@@ -71,6 +71,7 @@ class SearchVC: UIViewController {
     }
     @objc func didTapFollowersBtn(){
         guard isUserNameEntered else {
+           presentAlertOnMainThread(title: "Empty Username", message: "We need to know Github username to get the info of the User", buttontitle: "OK")
             return
         }
         let vc = dashBoardVC()

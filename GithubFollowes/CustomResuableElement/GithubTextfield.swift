@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GithubFollTextfield: UITextField {
+class GithubTextfield: UITextField {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
