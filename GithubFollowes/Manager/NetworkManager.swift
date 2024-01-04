@@ -20,7 +20,7 @@ class NetworkManager {
     
     func getfollowers(for userName: String, page: Int, completion: @escaping (Result<[Follower], DataError>) -> Void)
     {
-        let endPoint = Constant.API.GithubBaseURL + "users/\(userName)/followers/?per_page=30&page=\(page)"
+        let endPoint = Constant.API.GithubBaseURL + "users/\(userName)/followers?per_page=100&&page=\(page)"
         guard let urlReq = URL(string: endPoint) else {
             completion(.failure(.invalidURL))
             return
@@ -38,10 +38,35 @@ class NetworkManager {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 let followerList = try decoder.decode([Follower].self, from: data)
-                if followerList.isEmpty == true {
-                    completion(.failure(.errorDecoding))
-                    return 
-                }
+                completion(.success(followerList))
+                print(followerList)
+            }
+            catch {
+                completion(.failure(.errorDecoding))
+            }
+        }.resume()
+    }
+    
+    func getUsers(for userName: String, completion: @escaping (Result<[UserModel], DataError>) -> Void)
+    {
+        let endPoint = Constant.API.GithubBaseURL + "users/\(userName)/followers?per_page=100&&page=\(page)"
+        guard let urlReq = URL(string: endPoint) else {
+            completion(.failure(.invalidURL))
+            return
+        }
+        URLSession.shared.dataTask(with: urlReq) { data, resp, err in
+            guard let data = data, err == nil else {
+                completion(.failure(.invalidData))
+                return
+            }
+            guard let response = resp as? HTTPURLResponse, 200...299 ~= response.statusCode else {
+                completion(.failure(.invalidResponse))
+                return
+            }
+            do {
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                let followerList = try decoder.decode([Follower].self, from: data)
                 completion(.success(followerList))
                 print(followerList)
             }

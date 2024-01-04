@@ -62,8 +62,8 @@
             filePath = "GithubFollowes/Manager/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "getfollowers(for:page:completion:)"
             landmarkType = "7">
          </BreakpointContent>
